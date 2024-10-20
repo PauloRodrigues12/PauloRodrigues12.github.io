@@ -112,6 +112,27 @@
         loop: true,
         items: 1
     });
+
+    /*Popup-Box-Selector*/
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const popupContainer = document.querySelector('.popup-container');
+            popupContainer.style.display = 'flex';
+            
+            // Center the popup horizontally
+            const popup = popupContainer.querySelector('.popup');
+            const screenWidth = window.innerWidth;
+            const popupWidth = popup.offsetWidth;
+            const leftOffset = (screenWidth / 2) - (popupWidth / 2);
+            popup.style.left = `${leftOffset}px`;
+        });
+    });
     
+    document.querySelector('.close-popup').addEventListener('click', () => {
+        const popupContainer = document.querySelector('.popup-container');
+        popupContainer.style.display = 'none';
+    });
+    /*End-Popup-Box-Selector*/
+
 })(jQuery);
 

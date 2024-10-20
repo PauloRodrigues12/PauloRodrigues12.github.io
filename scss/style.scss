@@ -21,6 +21,7 @@ $enable-responsive-font-sizes: true;
 
 
 /********** Template CSS ************/
+
 h1,
 .font-weight-bolder {
     font-weight: 900 !important;
@@ -42,6 +43,55 @@ h6,
 .font-weight-normal {
     font-weight: 400 !important;
 }
+
+/*Popup-Box*/
+
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.close-popup {
+    float: right;
+    margin-top: 10px;
+}
+
+.project-description {
+    line-height: 1.5;
+}
+
+.modal-content {
+    max-width: 900px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/*End-Popup-Box*/
 
 .font-weight-thin {
     font-weight: 100 !important;
