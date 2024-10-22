@@ -44,6 +44,24 @@ h6,
     font-weight: 400 !important;
 }
 
+/*Styled Images*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /*Popup-Box*/
 
 .popup-container {

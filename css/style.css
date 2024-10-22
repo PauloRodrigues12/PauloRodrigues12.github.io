@@ -42,6 +42,26 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/*Styled Images*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*End Styled Images*/
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
