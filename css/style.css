@@ -9545,6 +9545,15 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+/*Title Color - Previous Color: #221c2d*/
+.text-name {
+  color: white !important;
+}
+
+.text-backtitle {
+  color: #dbdbdb !important;
+}
+
 .text-primary {
   color: #221c2d !important;
 }
