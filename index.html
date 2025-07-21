@@ -2,662 +2,563 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio - Paulo Rodrigues</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Portfolio" name="keywords">
-    <meta content="Portfolio - Paulo Rodrigues" name="description">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Paulo Rodrigues</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#portfolio" class="nav-item nav-link">Projects</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Paulo Rodrigues</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
-    <!-- Navbar End -->
 
+  </header>
 
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Paulo Rodrigues</h2>
+        <p>I'm <span class="typed" data-typed-items="Gameplay Programmer, Game Designer"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Check out my <b><a href="https://github.com/PauloRodrigues12">Github</a></b> if you are interested in my
+          work!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <!-- Clickable wrapper for the whole portfolio card -->
+              <div class="portfolio-content h-100" data-bs-toggle="modal" data-bs-target="#modalTempleRaider"
+                style="cursor: pointer;">
+                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Temple Raider</h4>
+                  <p>2D Dungeon Crawler</p>
                 </div>
+              </div>
+
             </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <!-- Clickable wrapper for the whole portfolio card -->
+              <div class="portfolio-content h-100" data-bs-toggle="modal" data-bs-target="#modalAccursed"
+                style="cursor: pointer;">
+                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Accursed</h4>
+                  <p>3º Person Adventure Game</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <!-- Clickable wrapper for the whole portfolio card -->
+              <div class="portfolio-content h-100" data-bs-toggle="modal" data-bs-target="#modalDimensionalDrifter"
+                style="cursor: pointer;">
+                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Temple Raider</h4>
+                  <p>2D Dungeon Crawler</p>
+                </div>
+              </div>
+
+            </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
         </div>
-    </div>
-    <!-- Video Modal End -->
 
+      </div>
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hello! I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Paulo Rodrigues</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Gameplay Programmer, Game Designer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="cv/CV_PauloRodrigues.pdf" class="btn btn-outline-light mr-5" target="_blank">Download
-                            CV</a>
-                        <a href="https://github.com/PauloRodrigues12" class="btn btn-outline-light mr-5">Github</a>
-                    </div>
-                </div>
+    </section><!-- /Portfolio Section -->
+
+    <div class="modal fade" id="modalTempleRaider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Temple Raider</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <p class="mt-3">A 2D Dungeon Crawler game with procedurally generated dungeons, where the player
+              must look for a treasure inside the dungeon and escape through a portal.</p>
+            <p class="mt-3">Each location has different variations of terrain and there's two types of enemies
+              that have different behaviour when they get closer to the player.</p>
+            <p class="mt-3">This project was developed as a part of my University coursework and I decided to
+              make some changes, such as fixing some of the world generation bugs and reworking the AI.</p>
+
+            <iframe width="740" height="530" src="https://www.youtube.com/embed/AYrfMPW5vj8" frameborder="0"
+              allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+            <!--<p style="text-align:center;"><img src="img/portfolio-1.jpg" class="img-fluid" alt="Project Image"></p>-->
+
+            <h4 class="mt-3">What I Worked on:</h4>
+            <ul class="mt-3">
+              <li>Worked on the game design.</li>
+              <li>Programmed the procedurally generated dungeons.</li>
+              <li>Programmed the player's controls and movement.</li>
+              <li>Programmed the player's animations.</li>
+              <li>Other minor stuff: camera controller, UI programming.</li>
+            </ul>
+
+            <h4 class="mt-3">Project Information:</h4>
+            <ul class="mt-3">
+              <li>Technologies - Unity, VS Code</li>
+              <li>Languages - C#</li>
+              <li>Project Management - Github</li>
+            </ul>
+
+            <p class="mt-3">Source code is available on <a href="https://github.com/PauloRodrigues12/TempleRaider"
+                style="color: black;">Github</a>.
+            </p>
+            <p class="mt-3">Game build is available on <a href="https://pauloricardorodrigues.itch.io/temple-raider"
+                style="color: black;">Itch.io</a>.</p>
+
+            <h4 class="mt-3">In-game Screenshots:</h4>
+            <div class="row">
+              <div class="column">
+                <img src="assets/img/portfolio/TempleRaider1.jpg" class="img-fluid" alt="TempleRaider Screenshot"
+                  style="width:100%">
+                <p> </p>
+                <img src="assets/img/portfolio/TempleRaider2.jpg" class="img-fluid" alt="TempleRaider Screenshot"
+                  style="width:100%">
+              </div>
+              <div class="column">
+                <img src="assets/img/portfolio/TempleRaider3.jpg" class="img-fluid" alt="TempleRaider Screenshot"
+                  style="width:100%">
+                <p> </p>
+                <img src="assets/img/portfolio/TempleRaider4.jpg" class="img-fluid" alt="TempleRaider Screenshot"
+                  style="width:100%">
+              </div>
             </div>
+
+          </div>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Projects Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-toggle="modal" data-target="#exampleModal1"
-                                class="open-modal">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-toggle="modal" data-target="#exampleModal2"
-                                class="open-modal">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-toggle="modal" data-target="#exampleModal3"
-                                class="open-modal">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-toggle="modal" data-target="#exampleModal4" class="open-modal">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-toggle="modal" data-target="#exampleModal4" class="open-modal">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-toggle="modal" data-target="#exampleModal4" class="open-modal">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px">
-            <div class="modal-content" style="text-align: left" style="align-content: center;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Temple Raider</h5>
-                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    -->
-                </div>
-                <div class="modal-body">
-
-                    <p class="mt-3">A 2D Dungeon Crawler game with procedurally generated dungeons, where the player
-                        must look for a treasure inside the dungeon and escape through a portal.</p>
-                    <p class="mt-3">Each location has different variations of terrain and there's two types of enemies
-                        that have different behaviour when they get closer to the player.</p>
-                    <p class="mt-3">This project was developed as a part of my University coursework and I decided to
-                        make some changes, such as fixing some of the world generation bugs and reworking the AI.</p>
-
-                    <iframe width="840" height="530" src="https://www.youtube.com/embed/AYrfMPW5vj8" frameborder="0"
-                        allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
-                    <!--<p style="text-align:center;"><img src="img/portfolio-1.jpg" class="img-fluid" alt="Project Image"></p>-->
-
-                    <h4 class="mt-3">What I Worked on:</h4>
-                    <ul class="mt-3">
-                        <li>Worked on the game design.</li>
-                        <li>Programmed the procedurally generated dungeons.</li>
-                        <li>Programmed the player's controls and movement.</li>
-                        <li>Programmed the player's animations.</li>
-                        <li>Other minor stuff: camera controller, UI programming.</li>
-                    </ul>
-
-                    <h4 class="mt-3">Project Information:</h4>
-                    <ul class="mt-3">
-                        <li>Technologies - Unity, VS Code</li>
-                        <li>Languages - C#</li>
-                        <li>Project Management - Github</li>
-                    </ul>
-
-                    <p class="mt-3">Source code is available on <a
-                            href="https://github.com/PauloRodrigues12/TempleRaider" style="color: black;">Github</a>.
-                    </p>
-                    <p class="mt-3">Game build is available on <a
-                            href="https://pauloricardorodrigues.itch.io/temple-raider"
-                            style="color: black;">Itch.io</a>.</p>
-
-                    <h4 class="mt-3">In-game Screenshots:</h4>
-                    <div class="row">
-                        <div class="column">
-                            <img src="img/TempleRaider1.jpg" class="img-fluid" alt="TempleRaider Screenshot"
-                                style="width:100%">
-                            <p> </p>
-                            <img src="img/TempleRaider2.jpg" class="img-fluid" alt="TempleRaider Screenshot"
-                                style="width:100%">
-                        </div>
-                        <div class="column">
-                            <img src="img/TempleRaider3.jpg" class="img-fluid" alt="TempleRaider Screenshot"
-                                style="width:100%">
-                            <p> </p>
-                            <img src="img/TempleRaider4.jpg" class="img-fluid" alt="TempleRaider Screenshot"
-                                style="width:100%">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px">
-            <div class="modal-content" style="text-align: left" style="align-content: center;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Accursed</h5>
-                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    -->
-                </div>
-                <div class="modal-body">
+    <div class="modal fade" id="modalAccursed" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Accursed</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
 
-                    <p class="mt-3">Accursed is a short 3º person adventure game, where the player must wield the power
-                        of the Cursed Orbs and find a way to escape the dungeon.</p>
-                    <p class="mt-3">Each Cursed Orb contains a different power, which will help the player throughout
-                        the dungeon, but also inflict a negative effect upon them while holding an Orb. They also work
-                        as Keys, being able to fit in certain sockets.</p>
-                    <p class="mt-3">This game was originaly made in a 5-day Game Jam simulation. And later we decided to
-                        make some changes, such as fixing some of the game-breaking bugs and completely reworked the
-                        level design. Both the original Game Jam version, and the Altered version are available to
-                        download and play.</p>
+            <p class="mt-3">Accursed is a short 3º person adventure game, where the player must wield the power
+              of the Cursed Orbs and find a way to escape the dungeon.</p>
+            <p class="mt-3">Each Cursed Orb contains a different power, which will help the player throughout
+              the dungeon, but also inflict a negative effect upon them while holding an Orb. They also work
+              as Keys, being able to fit in certain sockets.</p>
+            <p class="mt-3">This game was originaly made in a 5-day Game Jam simulation. And later we decided to
+              make some changes, such as fixing some of the game-breaking bugs and completely reworked the
+              level design. Both the original Game Jam version, and the Altered version are available to
+              download and play.</p>
 
-                    <p></p>
-                    <iframe width="840" height="530" src="https://www.youtube.com/embed/Mzzv63G7Gj4" frameborder="0"
-                        allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
-                    <!--<p style="text-align:center;"><img src="img/portfolio-2.jpg" class="img-fluid" alt="Project Image"></p>-->
-
-                    <h4 class="mt-3">What I Worked on:</h4>
-                    <ul class="mt-3">
-                        <li>Worked on the game design.</li>
-                        <li>Programmed the player's controls and movement.</li>
-                        <li>Programmed the player's animations.</li>
-                        <li>Worked on the player interaction with orbs.</li>
-                        <li>Programmed the enemies behaviours.</li>
-                        <li>Other minor stuff: camera controller, UI programming.</li>
-                    </ul>
-
-                    <h4 class="mt-3">Project Information:</h4>
-                    <ul class="mt-3">
-                        <li>Technologies - Unity, VS Code</li>
-                        <li>Languages - C#</li>
-                        <li>Project Management - Github</li>
-                    </ul>
-
-                    <p class="mt-3">Source code is available on <a href="https://github.com/PauloRodrigues12/Accursed"
-                            style="color: black;">Github</a>.</p>
-                    <p class="mt-3">Game build is available on <a href="https://raul-horta.itch.io/accursed"
-                            style="color: black;">Itch.io</a>.</p>
-
-                    <h4 class="mt-3">In-game Screenshots:</h4>
-                    <div class="row">
-                        <div class="column">
-                            <img src="img/Accursed1.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
-                            <p> </p>
-                            <img src="img/Accursed2.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
-                        </div>
-                        <div class="column">
-                            <img src="img/Accursed3.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
-                            <p> </p>
-                            <img src="img/Accursed4.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px">
-            <div class="modal-content" style="text-align: left" style="align-content: center;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Dimensional Drifter</h5>
-                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    -->
-                </div>
-                <div class="modal-body">
-
-                    <p class="mt-3">A 2D adventure puzzle game with portal mechanics.</p>
-                    <p class="mt-3">The objective is to leave the factory where the player is located.</p>
-                    <p class="mt-3">The player has two types of portals and various puzzles to solve around the ten
-                        available levels.</p>
-
-                    <iframe width="840" height="530" src="https://www.youtube.com/embed/19XKHHGYuoE" frameborder="0"
-                        allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
-                    <!--<p style="text-align:center;"><img src="img/portfolio-1.jpg" class="img-fluid" alt="Project Image"></p>-->
-
-                    <h4 class="mt-3">What I Worked on:</h4>
-                    <ul class="mt-3">
-                        <li>Worked on the game design.</li>
-                        <li>Programmed the portal mechanics.</li>
-                        <li>Programmed the player's controls and movement.</li>
-                        <li>Programmed the player's animations.</li>
-                        <li>Other minor stuff: camera controller, UI programming.</li>
-                    </ul>
-
-                    <h4 class="mt-3">Project Information:</h4>
-                    <ul class="mt-3">
-                        <li>Technologies - Unity, VS Code</li>
-                        <li>Languages - C#</li>
-                        <li>Project Management - Github</li>
-                    </ul>
-
-                    <p class="mt-3">Source code is available on <a
-                            href="https://github.com/PauloRodrigues12/DimensionalDrifter"
-                            style="color: black;">Github</a>.</p>
-                    <p class="mt-3">Game build is available on <a
-                            href="https://pauloricardorodrigues.itch.io/dimensional-drifter"
-                            style="color: black;">Itch.io</a>.</p>
-
-                    <h4 class="mt-3">In-game Screenshots:</h4>
-                    <div class="row">
-                        <div class="column">
-                            <img src="img/DimensionalDrifter1.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
-                                style="width:100%">
-                            <p> </p>
-                            <img src="img/DimensionalDrifter2.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
-                                style="width:100%">
-                        </div>
-                        <div class="column">
-                            <img src="img/DimensionalDrifter3.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
-                                style="width:100%">
-                            <p> </p>
-                            <img src="img/DimensionalDrifter4.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
-                                style="width:100%">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px">
-            <div class="modal-content" style="text-align: left" style="align-content: center;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Work in Progress</h5>
-                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    -->
-                </div>
-                <div class="modal-body">
-
-                    <p class="mt-3">A work in progress description...</p>
-
-                    <p style="text-align:center;"><img src="img/portfolio-4.jpg" class="img-fluid" alt="Project Image">
-                    </p>
-
-                    <p class="mt-3">Another work in progress description...</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!--
-    <div class="popup-container">
-        <div class="popup">
-            <h2 class="text-center">Project Details</h2>
-            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="close-popup btn btn-secondary">Close</button>
-        </div>
-    </div>
-    -->
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C#</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C++</h6>
-                            <h6 class="font-weight-bold">15%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JSON</h6>
-                            <h6 class="font-weight-bold">60%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Unity</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Unreal Engine</h6>
-                            <h6 class="font-weight-bold">15%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="15" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GODOT</h6>
-                            <h6 class="font-weight-bold">5%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="5" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skill End -->
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Gameplay Programmer & Game Designer</h3>
-                    <p>Hey! I'm Paulo Rodrigues, a Gameplay Programmer and Game Designer from Portugal! I've been
-                        developing games since I finished high school.
-                        In this portfolio you will see my projects and professional experiences.
-                    </p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2">
-                            <h6>Name: <span class="text-secondary">Paulo Rodrigues</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Birthday: <span class="text-secondary">12 May 2001</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Degree: <span class="text-secondary">Digital Game Development</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Experience: <span class="text-secondary">4+ Years</span></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="col-lg-6">
-                <h3 class="mb-4">My Expericence</h3>
-                <div class="border-left border-primary pt-2 pl-4 ml-2">
-                    <div class="position-relative mb-4">
-                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                        <h5 class="font-weight-bold mb-1">DuGuT Foundation</h5>
-                        <p class="mb-2"><strong>Sustainability Company</strong> | <small>2021 - 2022</small></p>
-                        <p> Worked as a Gameplay Programmer and Game Designer for DuGuT's Metaverse Project.</p>
-                    </div>
-                    <!--
-                    <div class="position-relative mb-4">
-                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                        <h5 class="font-weight-bold mb-1">Company Name</h5>
-                        <p class="mb-2"><strong>Company Type</strong> | <small>2000 - 2050</small></p>
-                        <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                    </div>
-                    <div class="position-relative mb-4">
-                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                        <h5 class="font-weight-bold mb-1">Company Name</h5>
-                        <p class="mb-2"><strong>Company Type</strong> | <small>2000 - 2050</small></p>
-                        <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                    </div>
-                    -->
-                </div>
-            </div>
             <p></p>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Degree - Digital Game Development</h5>
-                            <p class="mb-2"><strong>Instituto Politécnico da Maia</strong> | <small>2022 - 2025</small>
-                            </p>
-                            <p> Start of my portfolio and worked to become a Gameplay Programmer.
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">CTeSP - Multimedia and Digital Games</h5>
-                            <p class="mb-2"><strong>Instituto Politécnico da Maia</strong> | <small>2019-2022</small>
-                            </p>
-                            <p> Learned to work with multimedia tools and project organization tools.
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Professional Course - Computer Systems Management and
-                                Programming Technician</h5>
-                            <p class="mb-2"><strong>Escola Secundária da Maia</strong> | <small>2017-2019</small></p>
-                            <p> This course was where I started learning how to program and tried to learn more.
-                                I learned, on my own, to program in C# and that's how I made my first game, which was
-                                presented as my professional aptitude test for the course.
-                            </p>
-                        </div>
-                    </div>
+            <iframe width="740" height="530" src="https://www.youtube.com/embed/Mzzv63G7Gj4" frameborder="0"
+              allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+            <!--<p style="text-align:center;"><img src="img/portfolio-2.jpg" class="img-fluid" alt="Project Image"></p>-->
+
+            <h4 class="mt-3">What I Worked on:</h4>
+            <ul class="mt-3">
+              <li>Worked on the game design.</li>
+              <li>Programmed the player's controls and movement.</li>
+              <li>Programmed the player's animations.</li>
+              <li>Worked on the player interaction with orbs.</li>
+              <li>Programmed the enemies behaviours.</li>
+              <li>Other minor stuff: camera controller, UI programming.</li>
+            </ul>
+
+            <h4 class="mt-3">Project Information:</h4>
+            <ul class="mt-3">
+              <li>Technologies - Unity, VS Code</li>
+              <li>Languages - C#</li>
+              <li>Project Management - Github</li>
+            </ul>
+
+            <p class="mt-3">Source code is available on <a href="https://github.com/PauloRodrigues12/Accursed"
+                style="color: black;">Github</a>.</p>
+            <p class="mt-3">Game build is available on <a href="https://raul-horta.itch.io/accursed"
+                style="color: black;">Itch.io</a>.</p>
+
+            <h4 class="mt-3">In-game Screenshots:</h4>
+            <div class="row">
+              <div class="column">
+                <img src="assets/img/portfolio/Accursed1.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
+                <p> </p>
+                <img src="assets/img/portfolio/Accursed2.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="assets/img/portfolio/Accursed3.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
+                <p> </p>
+                <img src="assets/img/portfolio/Accursed4.jpg" class="img-fluid" alt="Accursed Screenshot" style="width:100%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalDimensionalDrifter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">DimensionalDrifter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <p class="mt-3">A 2D adventure puzzle game with portal mechanics.</p>
+            <p class="mt-3">The objective is to leave the factory where the player is located.</p>
+            <p class="mt-3">The player has two types of portals and various puzzles to solve around the ten
+              available levels.</p>
+
+            <iframe width="740" height="530" src="https://www.youtube.com/embed/19XKHHGYuoE" frameborder="0"
+              allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+            <!--<p style="text-align:center;"><img src="img/portfolio-1.jpg" class="img-fluid" alt="Project Image"></p>-->
+
+            <h4 class="mt-3">What I Worked on:</h4>
+            <ul class="mt-3">
+              <li>Worked on the game design.</li>
+              <li>Programmed the portal mechanics.</li>
+              <li>Programmed the player's controls and movement.</li>
+              <li>Programmed the player's animations.</li>
+              <li>Other minor stuff: camera controller, UI programming.</li>
+            </ul>
+
+            <h4 class="mt-3">Project Information:</h4>
+            <ul class="mt-3">
+              <li>Technologies - Unity, VS Code</li>
+              <li>Languages - C#</li>
+              <li>Project Management - Github</li>
+            </ul>
+
+            <p class="mt-3">Source code is available on <a href="https://github.com/PauloRodrigues12/DimensionalDrifter"
+                style="color: black;">Github</a>.</p>
+            <p class="mt-3">Game build is available on <a
+                href="https://pauloricardorodrigues.itch.io/dimensional-drifter" style="color: black;">Itch.io</a>.</p>
+
+            <h4 class="mt-3">In-game Screenshots:</h4>
+            <div class="row">
+              <div class="column">
+                <img src="assets/img/portfolio/DimensionalDrifter1.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
+                  style="width:100%">
+                <p> </p>
+                <img src="assets/img/portfolio/DimensionalDrifter2.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
+                  style="width:100%">
+              </div>
+              <div class="column">
+                <img src="assets/img/portfolio/DimensionalDrifter3.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
+                  style="width:100%">
+                <p> </p>
+                <img src="assets/img/portfolio/DimensionalDrifter4.jpg" class="img-fluid" alt="DimensionalDrifter Screenshot"
+                  style="width:100%">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <p>ㅤ</p>
+            <h2>Gameplay Programmer &amp; Game Designer</h2>
+            <p>ㅤ</p>
+            <p>
+              Hey! I'm Paulo Rodrigues, a Gameplay Programmer and Game Designer from Portugal! I've been developing
+              games since I finished high school. In this portfolio you will see my projects and professional
+              experiences.
+            </p>
+            <p>ㅤ</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Paulo Rodrigues</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Digital Game Development</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 May 2001</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>5+ Years</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>C#</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
-                <!--
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">DuGuT Foundation</h5>
-                            <p class="mb-2"><strong>Sustainability Company</strong> | <small>2021 - 2022</small></p>
-                            <p> Worked as a Gameplay Programmer and Game Designer for DuGuT's Metaverse Project.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Company Name</h5>
-                            <p class="mb-2"><strong>Company Type</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Company Name</h5>
-                            <p class="mb-2"><strong>Company Type</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
+              </div>
+            </div><!-- End Skills Item -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <div class="row mb-3 text-center">
-                <div class="col-sm-6 py-2">
-                    <h6>Email: <span class="text-secondary">paulo.rodriguespt01@gmail.com</span></h6>
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">15%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                 </div>
-            </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JSON</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Unity</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Unreal Engine</span> <i class="val">15%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>GODOT</span> <i class="val">5%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
         </div>
-    </div>
-    <!-- Contact End -->
 
+      </div>
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p><a href="assets/cv/CV_PauloRodrigues.pdf" class="btn btn-outline-dark mr-5" target="_blank">Download CV</a></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Degree - Digital Game Development</h4>
+              <h5>2022 - 2025</h5>
+              <p><em>Instituto Politécnico da Maia, Maia, Porto</em></p>
+              <p>Start of my portfolio and worked to become a Gameplay Programmer.</p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>CTeSP - Multimedia and Digital Games</h4>
+              <h5>2019-2022</h5>
+              <p><em>Instituto Politécnico da Maia, Maia, Porto</em></p>
+              <p>Learned to work with multimedia tools and project organization tools.</p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Professional Course - Computer Systems Management and Programming Technician</h4>
+              <h5>2017-2019</h5>
+              <p><em>Escola Secundária da Maia, Maia, Porto</em></p>
+              <p>This course was where I started learning how to program and tried to learn more.
+                I learned, on my own, to program in C# and that's how I made my first game, which was presented as my
+                professional aptitude test for the course.</p>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Worlds4Education - Jogos e Ambientes Educativos, Lda</h4>
+              <h5>2025</h5>
+              <p><em>Games and Educational Environments</em></p>
+              <p>Contributed as a Gameplay Programmer and Game Designer for an educational digital game developed for
+                Banco de Portugal.</p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>DuGuT Foundation, NGO</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Sustainability Company</em></p>
+              <p>Worked as a Gameplay Programmer and Game Designer for DuGuT's Metaverse Project.</p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>SOON Business Solutions</h4>
+              <h5>2018 - 2019</h5>
+              <p><em>Enterprise IT Solutions Company</em></p>
+              <p>Provided IT support, distributed technical solutions, built and tested custom computers for clients.
+              </p>
+            </div><!-- End Resume Item -->
+
+          </div>
+
         </div>
-    </div>
-    <!-- Footer End -->
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+      </div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    </section><!-- /Resume Section -->
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p><b>Email:</b> paulo.rodriguespt01@gmail.com</p>
+      </div><!-- End Section Title -->
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    </section><!-- /Contact Section -->
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
